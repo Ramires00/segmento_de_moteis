@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../../jgenhtml.xsl"?><coverage branch-rate="NaN" branches-covered="0" branches-valid="0" complexity="0" date="2025-02-09" filename="motels_service.dart" function-rate="NaN" functions-covered="0" functions-valid="0" line-rate="1.0" lines-covered="7" lines-valid="7" package="data/services" testname="lcov.info" version="1.6">
+<lines>
+<line number="1">
+<code>import 'package:projetos/config/http/http_client.dart';</code>
+</line>
+<line number="2">
+<code>import 'package:projetos/config/log/logger.dart';</code>
+</line>
+<line number="3">
+<code>import 'package:projetos/data/model/motel_response.dart';</code>
+</line>
+<line number="4">
+<code>import 'package:projetos/data/model/result.dart';</code>
+</line>
+<line number="5">
+<code/>
+</line>
+<line number="6">
+<code>class MotelsService {</code>
+</line>
+<line hits="1" number="7">
+<code>  MotelsService({</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="8">
+<code>    required HttpClient httpClient,</code>
+</line>
+<line number="9">
+<code>  }) : _httpClient = httpClient;</code>
+</line>
+<line number="10">
+<code/>
+</line>
+<line number="11">
+<code>  late final HttpClient _httpClient;</code>
+</line>
+<line number="12">
+<code/>
+</line>
+<line hits="1" number="13">
+<code>  Future&lt;Result&lt;MotelResponse&gt;&gt; getMotels() async {</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="14">
+<code>    try {</code>
+</line>
+<line hits="2" number="15">
+<code>      final response = await _httpClient.get();</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="1" number="16">
+<code>      return Ok(</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="17">
+<code>        value: MotelResponse.fromJson(response.data),</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line number="18">
+<code>      );</code>
+</line>
+<line number="19">
+<code>    } catch (e, s) {</code>
+</line>
+<line hits="2" number="20">
+<code>      Log.error(e.toString(), e, s);</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="1" number="21">
+<code>      return Error(</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="22">
+<code>        error:</code>
+</line>
+<line number="23">
+<code>            "Ocorreu um erro ao obter os hotÃ©is. Por favor, tente novamente ou contate o suporte.",</code>
+</line>
+<line number="24">
+<code>      );</code>
+</line>
+<line number="25">
+<code>    }</code>
+</line>
+<line number="26">
+<code>  }</code>
+</line>
+<line number="27">
+<code>}</code>
+</line>
+</lines>
+<config branch-coverage="true" description-file="false" function-coverage="true" genhtml_hi_limit="90" genhtml_med_limit="75" legend="false" no-sort="false" no-source="false" show-details="false"/>
+<base href="../../"/>
+<base href="../../"/>
+</coverage>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../../jgenhtml.xsl"?><coverage branch-rate="NaN" branches-covered="0" branches-valid="0" complexity="0" date="2025-02-09" filename="suite.dart" function-rate="NaN" functions-covered="0" functions-valid="0" line-rate="1.0" lines-covered="18" lines-valid="18" package="domain/models" testname="lcov.info" version="1.6">
+<lines>
+<line number="1">
+<code>import 'package:projetos/domain/models/categoria_item.dart';</code>
+</line>
+<line number="2">
+<code>import 'package:projetos/domain/models/item.dart';</code>
+</line>
+<line number="3">
+<code>import 'package:projetos/domain/models/periodo.dart';</code>
+</line>
+<line number="4">
+<code/>
+</line>
+<line number="5">
+<code>class Suite {</code>
+</line>
+<line number="6">
+<code>  String? nome;</code>
+</line>
+<line number="7">
+<code>  num? qtd;</code>
+</line>
+<line number="8">
+<code>  bool? exibirQtdDisponiveis;</code>
+</line>
+<line number="9">
+<code>  List&lt;String&gt;? fotos;</code>
+</line>
+<line number="10">
+<code>  List&lt;Item&gt;? itens;</code>
+</line>
+<line number="11">
+<code>  List&lt;CategoriaItem&gt;? categoriaItens;</code>
+</line>
+<line number="12">
+<code>  List&lt;Periodo&gt;? periodos;</code>
+</line>
+<line number="13">
+<code/>
+</line>
+<line hits="1" number="14">
+<code>  Suite({</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="15">
+<code>    this.nome,</code>
+</line>
+<line number="16">
+<code>    this.qtd,</code>
+</line>
+<line number="17">
+<code>    this.exibirQtdDisponiveis,</code>
+</line>
+<line number="18">
+<code>    this.fotos,</code>
+</line>
+<line number="19">
+<code>    this.itens,</code>
+</line>
+<line number="20">
+<code>    this.categoriaItens,</code>
+</line>
+<line number="21">
+<code>    this.periodos,</code>
+</line>
+<line number="22">
+<code>  });</code>
+</line>
+<line number="23">
+<code/>
+</line>
+<line hits="1" number="24">
+<code>  Suite.fromJson(Map&lt;String, dynamic&gt; json) {</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="25">
+<code>    nome = json['nome'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="26">
+<code>    qtd = json['qtd'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="27">
+<code>    exibirQtdDisponiveis = json['exibirQtdDisponiveis'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="3" number="28">
+<code>    fotos = json['fotos'].cast&lt;String&gt;();</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="1" number="29">
+<code>    if (json['itens'] != null) {</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="30">
+<code>      itens = [];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="3" number="31">
+<code>      json['itens'].forEach((v) {</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="3" number="32">
+<code>        itens?.add(Item.fromJson(v));</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line number="33">
+<code>      });</code>
+</line>
+<line number="34">
+<code>    }</code>
+</line>
+<line hits="1" number="35">
+<code>    if (json['categoriaItens'] != null) {</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="36">
+<code>      categoriaItens = [];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="3" number="37">
+<code>      json['categoriaItens'].forEach((v) {</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="3" number="38">
+<code>        categoriaItens?.add(CategoriaItem.fromJson(v));</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line number="39">
+<code>      });</code>
+</line>
+<line number="40">
+<code>    }</code>
+</line>
+<line hits="1" number="41">
+<code>    if (json['periodos'] != null) {</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="42">
+<code>      periodos = [];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="3" number="43">
+<code>      json['periodos'].forEach((v) {</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="3" number="44">
+<code>        periodos?.add(Periodo.fromJson(v));</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line number="45">
+<code>      });</code>
+</line>
+<line number="46">
+<code>    }</code>
+</line>
+<line number="47">
+<code>  }</code>
+</line>
+<line number="48">
+<code>}</code>
+</line>
+</lines>
+<config branch-coverage="true" description-file="false" function-coverage="true" genhtml_hi_limit="90" genhtml_med_limit="75" legend="false" no-sort="false" no-source="false" show-details="false"/>
+<base href="../../"/>
+<base href="../../"/>
+</coverage>

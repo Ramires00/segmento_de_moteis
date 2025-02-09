@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="jgenhtml.xsl"?><coverage branch-rate="NaN" branches-covered="0" branches-valid="0" complexity="0" date="2025-02-09" filename="index" function-rate="NaN" functions-covered="0" functions-valid="0" line-rate="0.96190476" lines-covered="101" lines-valid="105" testname="lcov.info" version="1.6">
+<sources>
+<source branches-hit="0" branches-valid="0" functions-hit="0" functions-valid="0" lines-hit="14" lines-valid="14" pathname="config/http" prefix="/projetos/lib/"/>
+<source branches-hit="0" branches-valid="0" functions-hit="0" functions-valid="0" lines-hit="3" lines-valid="7" pathname="config/log" prefix="/projetos/lib/"/>
+<source branches-hit="0" branches-valid="0" functions-hit="0" functions-valid="0" lines-hit="50" lines-valid="50" pathname="domain/models" prefix="/projetos/lib/"/>
+<source branches-hit="0" branches-valid="0" functions-hit="0" functions-valid="0" lines-hit="7" lines-valid="7" pathname="data/services" prefix="/projetos/lib/"/>
+<source branches-hit="0" branches-valid="0" functions-hit="0" functions-valid="0" lines-hit="8" lines-valid="8" pathname="data/repositories" prefix="/projetos/lib/"/>
+<source branches-hit="0" branches-valid="0" functions-hit="0" functions-valid="0" lines-hit="19" lines-valid="19" pathname="data/model" prefix="/projetos/lib/"/>
+</sources>
+<config branch-coverage="true" description-file="false" function-coverage="true" genhtml_hi_limit="90" genhtml_med_limit="75" legend="false" no-sort="false" no-source="false" show-details="false"/>
+</coverage>

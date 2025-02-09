@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../../jgenhtml.xsl"?><coverage branch-rate="NaN" branches-covered="0" branches-valid="0" complexity="0" date="2025-02-09" filename="http_client.dart" function-rate="NaN" functions-covered="0" functions-valid="0" line-rate="1.0" lines-covered="14" lines-valid="14" package="config/http" testname="lcov.info" version="1.6">
+<lines>
+<line number="1">
+<code>import 'package:dio/dio.dart';</code>
+</line>
+<line number="2">
+<code>import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';</code>
+</line>
+<line number="3">
+<code/>
+</line>
+<line hits="3" number="4">
+<code>final _cacheOptions = CacheOptions(</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="1" number="5">
+<code>    store: MemCacheStore(),</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="6">
+<code>    policy: CachePolicy.request,</code>
+</line>
+<line hits="1" number="7">
+<code>    hitCacheOnErrorExcept: [401, 403],</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="8">
+<code>    maxStale: const Duration(hours: 1),</code>
+</line>
+<line number="9">
+<code>    priority: CachePriority.normal);</code>
+</line>
+<line number="10">
+<code/>
+</line>
+<line number="11">
+<code>class HttpClient {</code>
+</line>
+<line hits="1" number="12">
+<code>  HttpClient({</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="13">
+<code>    required this.dio,</code>
+</line>
+<line number="14">
+<code>    required this.baseUrl,</code>
+</line>
+<line number="15">
+<code>  });</code>
+</line>
+<line number="16">
+<code/>
+</line>
+<line number="17">
+<code>  final Dio dio;</code>
+</line>
+<line number="18">
+<code>  final String baseUrl;</code>
+</line>
+<line number="19">
+<code/>
+</line>
+<line hits="1" number="20">
+<code>  Dio _createHttpClient({</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="21">
+<code>    Map&lt;String, dynamic&gt;? queryParameters,</code>
+</line>
+<line number="22">
+<code>  }) {</code>
+</line>
+<line hits="3" number="23">
+<code>    dio.options = BaseOptions(</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="1" number="24">
+<code>      baseUrl: baseUrl,</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="25">
+<code>      queryParameters: queryParameters,</code>
+</line>
+<line number="26">
+<code>    );</code>
+</line>
+<line number="27">
+<code/>
+</line>
+<line hits="3" number="28">
+<code>    dio.interceptors.add(</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="29">
+<code>      DioCacheInterceptor(options: _cacheOptions),</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line number="30">
+<code>    );</code>
+</line>
+<line number="31">
+<code/>
+</line>
+<line hits="1" number="32">
+<code>    return dio;</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="33">
+<code>  }</code>
+</line>
+<line number="34">
+<code/>
+</line>
+<line hits="1" number="35">
+<code>  Future&lt;dynamic&gt; get({String? path}) async {</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="1" number="36">
+<code>    final httpClient = _createHttpClient();</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="37">
+<code/>
+</line>
+<line hits="1" number="38">
+<code>    final response = await httpClient.get(path ?? '');</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="39">
+<code/>
+</line>
+<line hits="1" number="40">
+<code>    return response.data;</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="41">
+<code>  }</code>
+</line>
+<line number="42">
+<code>}</code>
+</line>
+</lines>
+<config branch-coverage="true" description-file="false" function-coverage="true" genhtml_hi_limit="90" genhtml_med_limit="75" legend="false" no-sort="false" no-source="false" show-details="false"/>
+<base href="../../"/>
+<base href="../../"/>
+</coverage>

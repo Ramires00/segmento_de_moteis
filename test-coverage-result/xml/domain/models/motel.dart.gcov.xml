@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../../jgenhtml.xsl"?><coverage branch-rate="NaN" branches-covered="0" branches-valid="0" complexity="0" date="2025-02-09" filename="motel.dart" function-rate="NaN" functions-covered="0" functions-valid="0" line-rate="1.0" lines-covered="13" lines-valid="13" package="domain/models" testname="lcov.info" version="1.6">
+<lines>
+<line number="1">
+<code>import 'package:projetos/domain/models/suite.dart';</code>
+</line>
+<line number="2">
+<code/>
+</line>
+<line number="3">
+<code>class Motel {</code>
+</line>
+<line number="4">
+<code>  String? fantasia;</code>
+</line>
+<line number="5">
+<code>  String? logo;</code>
+</line>
+<line number="6">
+<code>  String? bairro;</code>
+</line>
+<line number="7">
+<code>  num? distancia;</code>
+</line>
+<line number="8">
+<code>  num? qtdFavoritos;</code>
+</line>
+<line number="9">
+<code>  List&lt;Suite&gt;? suites;</code>
+</line>
+<line number="10">
+<code>  num? qtdAvaliacoes;</code>
+</line>
+<line number="11">
+<code>  num? media;</code>
+</line>
+<line number="12">
+<code/>
+</line>
+<line hits="1" number="13">
+<code>  Motel({</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="14">
+<code>    this.fantasia,</code>
+</line>
+<line number="15">
+<code>    this.logo,</code>
+</line>
+<line number="16">
+<code>    this.bairro,</code>
+</line>
+<line number="17">
+<code>    this.distancia,</code>
+</line>
+<line number="18">
+<code>    this.qtdFavoritos,</code>
+</line>
+<line number="19">
+<code>    this.suites,</code>
+</line>
+<line number="20">
+<code>    this.qtdAvaliacoes,</code>
+</line>
+<line number="21">
+<code>    this.media,</code>
+</line>
+<line number="22">
+<code>  });</code>
+</line>
+<line number="23">
+<code/>
+</line>
+<line hits="1" number="24">
+<code>  Motel.fromJson(Map&lt;String, dynamic&gt; json) {</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="25">
+<code>    fantasia = json['fantasia'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="26">
+<code>    logo = json['logo'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="27">
+<code>    bairro = json['bairro'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="28">
+<code>    distancia = json['distancia'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="29">
+<code>    qtdFavoritos = json['qtdFavoritos'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="1" number="30">
+<code>    if (json['suites'] != null) {</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="31">
+<code>      suites = [];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="3" number="32">
+<code>      json['suites'].forEach((v) {</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="3" number="33">
+<code>        suites?.add(Suite.fromJson(v));</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line number="34">
+<code>      });</code>
+</line>
+<line number="35">
+<code>    }</code>
+</line>
+<line hits="2" number="36">
+<code>    qtdAvaliacoes = json['qtdAvaliacoes'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="37">
+<code>    media = json['media'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line number="38">
+<code>  }</code>
+</line>
+<line number="39">
+<code>}</code>
+</line>
+</lines>
+<config branch-coverage="true" description-file="false" function-coverage="true" genhtml_hi_limit="90" genhtml_med_limit="75" legend="false" no-sort="false" no-source="false" show-details="false"/>
+<base href="../../"/>
+<base href="../../"/>
+</coverage>

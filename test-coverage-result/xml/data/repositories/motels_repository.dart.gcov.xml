@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../../jgenhtml.xsl"?><coverage branch-rate="NaN" branches-covered="0" branches-valid="0" complexity="0" date="2025-02-09" filename="motels_repository.dart" function-rate="NaN" functions-covered="0" functions-valid="0" line-rate="1.0" lines-covered="8" lines-valid="8" package="data/repositories" testname="lcov.info" version="1.6">
+<lines>
+<line number="1">
+<code>import 'package:projetos/data/model/motel_response.dart';</code>
+</line>
+<line number="2">
+<code>import 'package:projetos/data/model/result.dart';</code>
+</line>
+<line number="3">
+<code>import 'package:projetos/data/services/motels_service.dart';</code>
+</line>
+<line number="4">
+<code>import 'package:projetos/domain/models/motel.dart';</code>
+</line>
+<line number="5">
+<code/>
+</line>
+<line number="6">
+<code>class MotelsRepository {</code>
+</line>
+<line hits="1" number="7">
+<code>  MotelsRepository({</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="8">
+<code>    required MotelsService motelsService,</code>
+</line>
+<line number="9">
+<code>  }) : _motelsService = motelsService;</code>
+</line>
+<line number="10">
+<code/>
+</line>
+<line number="11">
+<code>  final MotelsService _motelsService;</code>
+</line>
+<line number="12">
+<code/>
+</line>
+<line hits="1" number="13">
+<code>  Future&lt;Result&lt;List&lt;Motel&gt;&gt;&gt; getMotels() async {</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="14">
+<code>    final motelsResult = await _motelsService.getMotels();</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line number="15">
+<code/>
+</line>
+<line number="16">
+<code>    switch (motelsResult) {</code>
+</line>
+<line hits="1" number="17">
+<code>      case Ok&lt;MotelResponse&gt;():</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="4" number="18">
+<code>        return Ok(value: motelsResult.value.data?.moteis ?? []);</code>
+<hit count="4" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="1" number="19">
+<code>      case Error&lt;MotelResponse&gt;():</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="20">
+<code>      default:</code>
+</line>
+<line hits="1" number="21">
+<code>        return Error(</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="1" number="22">
+<code>          error: (motelsResult as Error).error,</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="23">
+<code>        );</code>
+</line>
+<line number="24">
+<code>    }</code>
+</line>
+<line number="25">
+<code>  }</code>
+</line>
+<line number="26">
+<code>}</code>
+</line>
+</lines>
+<config branch-coverage="true" description-file="false" function-coverage="true" genhtml_hi_limit="90" genhtml_med_limit="75" legend="false" no-sort="false" no-source="false" show-details="false"/>
+<base href="../../"/>
+<base href="../../"/>
+</coverage>

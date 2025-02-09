@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../../jgenhtml.xsl"?><coverage branch-rate="NaN" branches-covered="0" branches-valid="0" complexity="0" date="2025-02-09" filename="periodo.dart" function-rate="NaN" functions-covered="0" functions-valid="0" line-rate="1.0" lines-covered="9" lines-valid="9" package="domain/models" testname="lcov.info" version="1.6">
+<lines>
+<line number="1">
+<code>import 'package:projetos/domain/models/desconto.dart';</code>
+</line>
+<line number="2">
+<code/>
+</line>
+<line number="3">
+<code>class Periodo {</code>
+</line>
+<line number="4">
+<code>  String? tempoFormatado;</code>
+</line>
+<line number="5">
+<code>  String? tempo;</code>
+</line>
+<line number="6">
+<code>  num? valor;</code>
+</line>
+<line number="7">
+<code>  num? valorTotal;</code>
+</line>
+<line number="8">
+<code>  bool? temCortesia;</code>
+</line>
+<line number="9">
+<code>  Desconto? desconto;</code>
+</line>
+<line number="10">
+<code/>
+</line>
+<line hits="1" number="11">
+<code>  Periodo({</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line number="12">
+<code>    this.tempoFormatado,</code>
+</line>
+<line number="13">
+<code>    this.tempo,</code>
+</line>
+<line number="14">
+<code>    this.valor,</code>
+</line>
+<line number="15">
+<code>    this.valorTotal,</code>
+</line>
+<line number="16">
+<code>    this.temCortesia,</code>
+</line>
+<line number="17">
+<code>    this.desconto,</code>
+</line>
+<line number="18">
+<code>  });</code>
+</line>
+<line number="19">
+<code/>
+</line>
+<line hits="1" number="20">
+<code>  Periodo.fromJson(Map&lt;String, dynamic&gt; json) {</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="21">
+<code>    tempoFormatado = json['tempoFormatado'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="22">
+<code>    tempo = json['tempo'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="23">
+<code>    valor = json['valor'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="24">
+<code>    valorTotal = json['valorTotal'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="2" number="25">
+<code>    temCortesia = json['temCortesia'];</code>
+<hit count="2" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="1" number="26">
+<code>    desconto =</code>
+<hit count="1" name="&lt;unnamed&gt;"/>
+</line>
+<line hits="3" number="27">
+<code>        json['desconto'] != null ? Desconto.fromJson(json['desconto']) : null;</code>
+<hit count="3" name="&lt;unnamed&gt;"/>
+</line>
+<line number="28">
+<code>  }</code>
+</line>
+<line number="29">
+<code>}</code>
+</line>
+</lines>
+<config branch-coverage="true" description-file="false" function-coverage="true" genhtml_hi_limit="90" genhtml_med_limit="75" legend="false" no-sort="false" no-source="false" show-details="false"/>
+<base href="../../"/>
+<base href="../../"/>
+</coverage>
