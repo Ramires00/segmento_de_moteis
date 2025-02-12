@@ -19,12 +19,6 @@ void main() {
 
   group('MotelsService test', () {
     test('MotelsService should return an Ok MotelResponse', () async {
-      final fakeResponse = Response(
-        requestOptions: RequestOptions(path: 'path'),
-        statusCode: 200,
-        data: fakeJson,
-      );
-
       when(
         () => mockHttpClient.get(
           path: any(
@@ -32,7 +26,7 @@ void main() {
           ),
         ),
       ).thenAnswer(
-        (_) async => fakeResponse,
+        (_) async => fakeJson,
       );
 
       final Result<MotelResponse> response = await motelsService.getMotels();

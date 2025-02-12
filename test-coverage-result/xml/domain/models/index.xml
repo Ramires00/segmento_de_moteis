@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../../jgenhtml.xsl"?><coverage branch-rate="NaN" branches-covered="0" branches-valid="0" complexity="0" date="2025-02-09" filename="index" function-rate="NaN" functions-covered="0" functions-valid="0" line-rate="1.0" lines-covered="50" lines-valid="50" package="domain/models" testname="lcov.info" version="1.6">
+<?xml-stylesheet type="text/xsl" href="../../jgenhtml.xsl"?><coverage branch-rate="NaN" branches-covered="0" branches-valid="0" complexity="0" date="2025-02-11" filename="index" function-rate="NaN" functions-covered="0" functions-valid="0" line-rate="1.0" lines-covered="50" lines-valid="50" package="domain/models" testname="lcov.info" version="1.6">
 <sources>
-<source branches-hit="0" branches-valid="0" filename="desconto.dart" functions-hit="0" functions-valid="0" lines-hit="3" lines-valid="3" prefix="/projetos/lib/">
+<source branches-hit="0" branches-valid="0" filename="desconto.dart" functions-hit="0" functions-valid="0" lines-hit="3" lines-valid="3" prefix="/Users/ratar/Desktop/segmento_de_moteis/lib/">
 <testCase branches-hit="0" functions-hit="0" lines-hit="3" name="&lt;unnamed&gt;"/>
 </source>
-<source branches-hit="0" branches-valid="0" filename="periodo.dart" functions-hit="0" functions-valid="0" lines-hit="9" lines-valid="9" prefix="/projetos/lib/">
+<source branches-hit="0" branches-valid="0" filename="periodo.dart" functions-hit="0" functions-valid="0" lines-hit="9" lines-valid="9" prefix="/Users/ratar/Desktop/segmento_de_moteis/lib/">
 <testCase branches-hit="0" functions-hit="0" lines-hit="9" name="&lt;unnamed&gt;"/>
 </source>
-<source branches-hit="0" branches-valid="0" filename="motel.dart" functions-hit="0" functions-valid="0" lines-hit="13" lines-valid="13" prefix="/projetos/lib/">
+<source branches-hit="0" branches-valid="0" filename="motel.dart" functions-hit="0" functions-valid="0" lines-hit="13" lines-valid="13" prefix="/Users/ratar/Desktop/segmento_de_moteis/lib/">
 <testCase branches-hit="0" functions-hit="0" lines-hit="13" name="&lt;unnamed&gt;"/>
 </source>
-<source branches-hit="0" branches-valid="0" filename="item.dart" functions-hit="0" functions-valid="0" lines-hit="3" lines-valid="3" prefix="/projetos/lib/">
+<source branches-hit="0" branches-valid="0" filename="item.dart" functions-hit="0" functions-valid="0" lines-hit="3" lines-valid="3" prefix="/Users/ratar/Desktop/segmento_de_moteis/lib/">
 <testCase branches-hit="0" functions-hit="0" lines-hit="3" name="&lt;unnamed&gt;"/>
 </source>
-<source branches-hit="0" branches-valid="0" filename="suite.dart" functions-hit="0" functions-valid="0" lines-hit="18" lines-valid="18" prefix="/projetos/lib/">
+<source branches-hit="0" branches-valid="0" filename="suite.dart" functions-hit="0" functions-valid="0" lines-hit="18" lines-valid="18" prefix="/Users/ratar/Desktop/segmento_de_moteis/lib/">
 <testCase branches-hit="0" functions-hit="0" lines-hit="18" name="&lt;unnamed&gt;"/>
 </source>
-<source branches-hit="0" branches-valid="0" filename="categoria_item.dart" functions-hit="0" functions-valid="0" lines-hit="4" lines-valid="4" prefix="/projetos/lib/">
+<source branches-hit="0" branches-valid="0" filename="categoria_item.dart" functions-hit="0" functions-valid="0" lines-hit="4" lines-valid="4" prefix="/Users/ratar/Desktop/segmento_de_moteis/lib/">
 <testCase branches-hit="0" functions-hit="0" lines-hit="4" name="&lt;unnamed&gt;"/>
 </source>
 </sources>
