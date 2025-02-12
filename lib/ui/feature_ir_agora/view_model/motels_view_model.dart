@@ -22,7 +22,7 @@ class MotelsViewModel extends ChangeNotifier {
     isLoading = true;
     notifyListeners();
 
-    final motelsResult = await _repository.getMotels();
+    final Result<List<Motel>> motelsResult = await _repository.getMotels();
 
     switch (motelsResult) {
       case Ok<List<Motel>>():

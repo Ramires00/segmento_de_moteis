@@ -14,7 +14,7 @@ class MotelsService {
     try {
       final response = await _httpClient.get();
       return Ok(
-        value: MotelResponse.fromJson(response.data),
+        value: MotelResponse.fromJson(response),
       );
     } catch (e, s) {
       Log.error(e.toString(), e, s);

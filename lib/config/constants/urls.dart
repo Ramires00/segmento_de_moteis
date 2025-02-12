@@ -1,3 +1,3 @@
 class Urls {
-  static const String baseUrl = 'https://jsonkeeper.com/b/1IXK';
+  static const String baseUrl = 'https://www.jsonkeeper.com/b/1IXK';
 }
